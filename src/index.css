@@ -1,0 +1,139 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol {
+  padding-left: 20px;
+
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -20px;
+  left: 150px;
+  margin: 0;
+}
+ol.game2 {
+  max-height: 500px;
+}
+ol.game4 {
+  max-height: 500px;
+  top: -83px;
+}
+ol.game5 {
+  max-height: 500px;
+  top: -92px;
+}
+
+li {
+  display: block;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+.game2 .square {
+  height: 40px; width: 40px;
+}
+.game4 .square {
+  height: 54px; width: 54px;
+  font-size: 42px;
+}
+.game4 .square,
+.game5 .square {
+  height: 54px; width: 54px;
+  font-size: 42px;
+  cursor: default;
+}
+
+.square:focus {
+  outline: none;
+}
+.square.latest {
+  background: #ff000033;
+}
+.square.assist {
+  background: #ff000033;
+  cursor: pointer;
+}
+.square.basepoint {
+  color: red;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  min-height: 150px;
+}
+.game-title {
+  font-size: 20px;
+}
+
+.game-board>div {
+  border: 1px solid black;
+  padding: 2px 2px 1px 1px;
+}
+
+.game-info {
+  margin-left: 20px;
+
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+button.winner {
+  color: red;
+  font-weight: bold;
+}
+
+a {
+  display: inline-block;
+  margin: 0px 10px 10px 0px;
+}
+
+.rule {
+  margin-top: 10px;
+}
+/*.rule ul {*/
+ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style-type: disc;
+}
+/*.rule ul li {*/
+ul li {
+  /*display: list-item;*/
+}
+.rule_side3 {
+  position: absolute;
+  top: 240px;
+  left:690px;
+}
+
