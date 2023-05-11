@@ -176,7 +176,7 @@ function SnakeGame() {
   const ctrlCourse = !isGameover.current && snakeBody.length === 1? (
     <div>
       <button className='' onClick={() => {toEasy(!isEasy)}}>
-        { !isEasy ? "初心者コースへ" : "通常コースへ" }
+        { !isEasy ? "初心者コース" : "通常コース" }
       </button>
     </div>
   ) : (
@@ -205,16 +205,19 @@ function SnakeGame() {
       <div className='rule'>
         <div>
           <ul>
+          </ul>
+        </div>
+      </div>
+      <div className='rule_side3'>
+        <div>
+          <ul>
             <li>遊び方：</li>
             <ul>
               <li>・「Q」を集めてより長くなる</li>
               <li>・外枠または自分の体に当たると終了</li>
             </ul>
           </ul>
-        </div>
-      </div>
-      <div className='rule_side3'>
-        <div>
+          <br />
           <ul>
             <li>通常コース：</li>
             <ul>
